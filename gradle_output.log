@@ -1,0 +1,56 @@
+Starting a Gradle Daemon, 9 stopped Daemons could not be reused, use --status for details
+> Task :compileJava
+> Task :processResources UP-TO-DATE
+> Task :classes
+> Task :resolveMainClassName
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2026-01-19T15:52:59.042+05:30  INFO 6322 --- [stayease] [  restartedMain] c.takehome.stayease.StayeaseApplication  : Starting StayeaseApplication using Java 17.0.7 with PID 6322 (/tmp/gradle_builds/stayease/stayease/classes/java/main started by crio-user in /home/crio-user/workspace/santhoshkumarcbe35-ME_BUILDOUT_STAYEASE)
+2026-01-19T15:52:59.048+05:30  INFO 6322 --- [stayease] [  restartedMain] c.takehome.stayease.StayeaseApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-01-19T15:52:59.160+05:30  INFO 6322 --- [stayease] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-01-19T15:52:59.160+05:30  INFO 6322 --- [stayease] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-01-19T15:53:00.178+05:30  INFO 6322 --- [stayease] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-19T15:53:00.280+05:30  INFO 6322 --- [stayease] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 3 JPA repository interfaces.
+2026-01-19T15:53:01.109+05:30  INFO 6322 --- [stayease] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-01-19T15:53:01.125+05:30  INFO 6322 --- [stayease] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-19T15:53:01.126+05:30  INFO 6322 --- [stayease] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2026-01-19T15:53:01.181+05:30  INFO 6322 --- [stayease] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-01-19T15:53:01.183+05:30  INFO 6322 --- [stayease] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2020 ms
+2026-01-19T15:53:01.371+05:30  INFO 6322 --- [stayease] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-01-19T15:53:01.429+05:30  INFO 6322 --- [stayease] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-01-19T15:53:01.467+05:30  INFO 6322 --- [stayease] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-01-19T15:53:01.809+05:30  INFO 6322 --- [stayease] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-19T15:53:01.857+05:30  INFO 6322 --- [stayease] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-19T15:53:02.280+05:30  INFO 6322 --- [stayease] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@50e4dfdc
+2026-01-19T15:53:02.283+05:30  INFO 6322 --- [stayease] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-19T15:53:02.356+05:30  WARN 6322 --- [stayease] [  restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.42 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-01-19T15:53:03.737+05:30  INFO 6322 --- [stayease] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-19T15:53:03.813+05:30  INFO 6322 --- [stayease] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-19T15:53:04.341+05:30  INFO 6322 --- [stayease] [  restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-01-19T15:53:04.342+05:30  WARN 6322 --- [stayease] [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2026-01-19T15:53:04.464+05:30  WARN 6322 --- [stayease] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-19T15:53:05.326+05:30  INFO 6322 --- [stayease] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-01-19T15:53:05.362+05:30  INFO 6322 --- [stayease] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-01-19T15:53:05.382+05:30  INFO 6322 --- [stayease] [  restartedMain] c.takehome.stayease.StayeaseApplication  : Started StayeaseApplication in 6.832 seconds (process running for 7.383)
+2026-01-19T15:53:06.036+05:30  INFO 6322 --- [stayease] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-19T15:53:06.036+05:30  INFO 6322 --- [stayease] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-19T15:53:06.038+05:30  INFO 6322 --- [stayease] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-01-19T15:53:06.907+05:30  WARN 6322 --- [stayease] [nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.takehome.stayease.dto.response.AuthResponse> com.takehome.stayease.controller.AuthController.register(com.takehome.stayease.dto.request.RegisterRequest) throws org.apache.coyote.BadRequestException: [Field error in object 'registerRequest' on field 'password': rejected value [weak]; codes [Pattern.registerRequest.password,Pattern.password,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.password,password]; arguments []; default message [password],[Ljakarta.validation.constraints.Pattern$Flag;@6e0ef55,^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$]; default message [Password must be at least 8 chars, contain uppercase, number, special char]] ]
+2026-01-19T15:53:06.919+05:30  WARN 6322 --- [stayease] [nio-8081-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.takehome.stayease.dto.response.AuthResponse> com.takehome.stayease.controller.AuthController.register(com.takehome.stayease.dto.request.RegisterRequest) throws org.apache.coyote.BadRequestException: [Field error in object 'registerRequest' on field 'email': rejected value [invalid-email]; codes [Email.registerRequest.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@1da66155,.*]; default message [must be a well-formed email address]] ]
+2026-01-19T15:53:07.337+05:30 ERROR 6322 --- [stayease] [io-8081-exec-10] c.t.s.exception.GlobalExceptionHandler   : Not found: Invalid credentials
+2026-01-19T15:53:07.340+05:30  WARN 6322 --- [stayease] [io-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.takehome.stayease.exception.ResourceNotFoundException: Invalid credentials]
+2026-01-19T15:53:07.591+05:30  INFO 6322 --- [stayease] [io-8081-exec-10] c.t.stayease.service.HotelService        : Hotel deleted with id 10
+2026-01-19T15:53:07.704+05:30  INFO 6322 --- [stayease] [nio-8081-exec-5] c.t.stayease.service.BookingService      : Booking created with id 2
+2026-01-19T15:53:07.742+05:30 ERROR 6322 --- [stayease] [nio-8081-exec-6] c.t.s.exception.GlobalExceptionHandler   : Not found: No rooms available
+2026-01-19T15:53:07.749+05:30  WARN 6322 --- [stayease] [nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.takehome.stayease.exception.ResourceNotFoundException: No rooms available]
+2026-01-19T15:53:07.809+05:30  INFO 6322 --- [stayease] [nio-8081-exec-8] c.t.stayease.service.BookingService      : Booking cancelled with id 2

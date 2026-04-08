@@ -1,0 +1,49 @@
+package com.takehome.stayease.controller;
+
+import jakarta.validation.Valid;
+import java.util.List;
+import com.takehome.stayease.dto.request.HotelRequest;
+import com.takehome.stayease.dto.response.HotelResponse;
+import com.takehome.stayease.service.HotelService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/api/hotels")
+public class HotelController {
+
+    @Autowired
+    private HotelService hotelService;
+
+    @PostMapping
+    public ResponseEntity<HotelResponse> createHotel(
+            @RequestBody HotelRequest request) {
+        return ResponseEntity.ok(hotelService.createHotel(request));
+    }
+
+    @GetMapping
+    public ResponseEntity<List<HotelResponse>> getAllHotels() {
+        return ResponseEntity.ok(hotelService.getAllHotels());
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<HotelResponse> updateHotel(
+            @PathVariable Long id,
+            @RequestBody HotelRequest request) {
+        return ResponseEntity.ok(hotelService.updateHotel(id, request));
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteHotel(@PathVariable Long id) {
+        hotelService.deleteHotel(id);
+        return ResponseEntity.noContent().build();
+    }
+}
