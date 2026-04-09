@@ -44,7 +44,9 @@ public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Excepti
         )
         .authorizeHttpRequests(auth -> auth
 
-    .requestMatchers("/api/users/**").permitAll()
+    .requestMatchers("/api/users/**","/v3/api-docs/**",
+        "/swagger-ui/**",
+        "/swagger-ui.html").permitAll()
     .requestMatchers(HttpMethod.GET, "/api/hotels/**").permitAll()
 
     .requestMatchers(HttpMethod.POST, "/api/hotels/**").hasAuthority("ROLE_ADMIN")
