@@ -23,6 +23,7 @@ public class HotelController {
     @Autowired
     private HotelService hotelService;
 
+    @SecurityRequirement(name = "bearerAuth")
     @PostMapping
     public ResponseEntity<HotelResponse> createHotel(
             @RequestBody HotelRequest request) {
@@ -34,6 +35,7 @@ public class HotelController {
         return ResponseEntity.ok(hotelService.getAllHotels());
     }
 
+    @SecurityRequirement(name = "bearerAuth")
     @PutMapping("/{id}")
     public ResponseEntity<HotelResponse> updateHotel(
             @PathVariable Long id,
@@ -41,6 +43,7 @@ public class HotelController {
         return ResponseEntity.ok(hotelService.updateHotel(id, request));
     }
 
+    @SecurityRequirement(name = "bearerAuth")
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteHotel(@PathVariable Long id) {
         hotelService.deleteHotel(id);
